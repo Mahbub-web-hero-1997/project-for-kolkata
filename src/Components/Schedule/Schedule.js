@@ -52,7 +52,7 @@ const Schedule = () => {
             {/* Second Section Start */}
             <div className='relative mt-[300px] mb-10'>
                 <div className='absolute top-[-5px] left-0 w-[35px] h-[35px] rounded-[50%] border-2 border-yellow-500 text-center flex justify-center items-center'>
-                    <span>1</span>
+                    <span>2</span>
                 </div>
                 <div className='grid grid-cols-3'>
                     <h6 className='font-semibold text-left mx-left ml-20 '>Select what you have</h6>
@@ -124,7 +124,7 @@ const Schedule = () => {
             {/* Third Section Start */}
             <div className='relative mt-[50px] mb-10'>
                 <div className='absolute top-[-5px] left-0 w-[35px] h-[35px] rounded-[50%] border-2 border-yellow-500 text-center flex justify-center items-center'>
-                    <span>1</span>
+                    <span>3</span>
                 </div>
                 <div className='grid grid-cols-3'>
                     <h6 className='font-semibold text-left mx-left ml-20 '>Select what you have</h6>
