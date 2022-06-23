@@ -38,42 +38,80 @@ const Schedule = () => {
             {/* First Section End */}
 
             {/* Second Section Start */}
-            <div className='relative mt-[300px]'>
+            <div className='relative mt-[300px] mb-10'>
                 <div className='absolute top-[-5px] left-0 w-[35px] h-[35px] rounded-[50%] border-2 border-yellow-500 text-center flex justify-center items-center'>
                     <span>1</span>
                 </div>
-                <h6 className='font-semibold text-left mx-left ml-20 mt-16'>Select what you have</h6>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 ml-20 border-b-2'>
-                    <div>
+                <div className='grid grid-cols-3'>
+                    <h6 className='font-semibold text-left mx-left ml-20 '>Select what you have</h6>
+                    <h6 className='font-semibold text-left mx-left ml-20 '>Select what you have</h6>
+                </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 ml-20 border-b-2'>
+                    {/* 2.1 section*/}
+
+                    <div className='relative'>
                         <div class="form-control mb-5">
                             <label class="label flex justify-start cursor-pointer">
-                                <input type="checkbox" class="checkbox border-2" />
+                                <input type="radio" name="radio-4" class="radio radio-accent" />
                                 <span class="label-text ml-2">Papers</span> <br />
                             </label>
                             <span class="label-text block ml-10 mt-[-10px] text-left opacity-60">( Books, magazines etc. )</span>
                         </div>
                         <div class="form-control mb-5">
                             <label class="label flex justify-start cursor-pointer">
-                                <input type="checkbox" class="checkbox border-2" />
+                                <input type="radio" name="radio-4" class="radio radio-accent" />
                                 <span class="label-text ml-2">Light weight- waste</span> <br />
                             </label>
                             <span class="label-text block ml-10 mt-[-10px] text-left opacity-60">( Keyboards, Monitors, Mobile etc. )</span>
                         </div>
                         <div class="form-control mb-5">
                             <label class="label flex justify-start cursor-pointer">
-                                <input type="checkbox" class="checkbox border-2" />
+                                <input type="radio" name="radio-4" class="radio radio-accent" />
                                 <span class="label-text ml-2">Large appliance</span> <br />
                             </label>
                             <span class="label-text block ml-10 mt-[-10px] text-left opacity-60">( Refrigerator, TV, Washing machine etc. )</span>
                         </div>
                     </div>
-                    <div></div>
+                    {/* 2.2 Section */}
+                    <div className='border-l-2 h-[300px] pl-5'>
+                        <div className='flex'>
+                            <div className='text-left border-r-2 pr-10'>
+                                <p>Non-Periodic</p>
+                                <div className="flex items-center mt-5">
+                                    <input type="radio" name="radio-5" class="radio radio-accent" />
+                                    <span className='ml-2'>Onetime</span>
+                                </div>
+                            </div>
+                            <div className='ml-10 text-left'>
+                                <p>Periodic</p>
+                                <div className="flex items-center mt-5">
+                                    <input type="radio" name="radio-5" class="radio radio-accent" />
+                                    <span className='ml-2'>Monthly</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[200px] ">
+                            <label class="label">
+                                <span class="label-text">Pick the best</span>
+
+                            </label>
+                            <select name="" id="" className='w-full'>
+                                <option value="" className='flex justify-center'>
+                                    <p>Ma</p>
+                                    <p>Ma</p>
+                                    <p>Ma</p>
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+                    {/* 2.3 Section */}
                     <img src={img2} alt="" />
                 </div>
             </div>
             {/* Second Section End */}
 
-        </section>
+        </section >
     );
 };
 
